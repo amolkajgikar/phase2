@@ -1,0 +1,14 @@
+<app-header></app-header>
+<p>home works!</p>
+<!-- <app-book-card [book]="books[0]"></app-book-card>
+<app-book-card [book]="books[1]"></app-book-card> -->
+
+<div class="row container">
+    <div class= "col-md-3" *ngFor="let book of book">
+        <app-book-card  [book]="book"></app-book-card>
+    </div>
+</div>
+    
+
+
+

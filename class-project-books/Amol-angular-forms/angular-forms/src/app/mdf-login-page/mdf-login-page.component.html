@@ -1,0 +1,13 @@
+<p>mdf-login-page works!</p>
+<div>
+    <h2>Login page using reactive form</h2>
+    <form [formGroup]="loginRef">
+        <label>UserName</label>
+        <input type="text" formControlName="user"/><br/>
+        <label>Password</label>
+        <input type="password" formControlName="pass"/><br/>
+        <input type="button" value="Click Here"/>
+        <input type="reset" value="reset"/>
+    </form>
+    <span style="color: red;">{{msg}}</span>
+</div>

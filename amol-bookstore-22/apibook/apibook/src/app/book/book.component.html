@@ -1,0 +1,33 @@
+<div>
+    <h4>Store Book</h4>
+    <form [formGroup]="bookRef" (ngSubmit)="storeBookInfo()">
+        <label>BookName</label >
+        <input type="text" formControlName="name"><br>
+        <label>Author</label>
+        <input type="text" formControlName="author"><br>
+        <label>Image url</label>
+        <input type="url" formControlName="imgSrc"><br>
+        <label>Price</label>
+        <input type="text" formControlName="price"><br>
+        <input type="submit" value="store book"/>
+        <input type="reset" value="reset"/>
+
+
+    </form>
+    <h2>All Books Details</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Image</th>
+            <th>Price</th>
+            
+            
+        </tr>
+        <tr *ngFor="let book of books">
+            <td>{{book.name}}</td>
+            <td>{{book.author}}</td>
+            <td><img src={{book.imgSrc}} width="200px" height="200px"></td>
+            <td>{{book. price}}</td>
+        </tr>
+    </table>

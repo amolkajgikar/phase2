@@ -1,0 +1,11 @@
+<!-- <p>home works! This is from home component html</p> -->
+<app-header></app-header>
+
+
+<!-- <app-book-card [book]="books [0]"></app-book-card>
+<app-book-card [book]="books [1]"></app-book-card> -->
+
+<!-- directive of Angular -->
+<app-book-card *ngFor="let number of books"[book]="number"></app-book-card>
+
+

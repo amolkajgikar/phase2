@@ -1,0 +1,14 @@
+<p>book-card works!</p>
+<div class="card" style="width: 14rem;">
+    <img class="card-img-top" [src]="book.imgSrc" alt="Card image cap">
+    <div class="card-body"><h5 class="card-title">{{book.name}}</h5>
+        <p class="card-text">{{book.author}}</p>  
+
+        <p class="card-text">Price : {{book.price ? book.price:'Not available'}}</p> 
+
+        
+        
+
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>

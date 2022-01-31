@@ -1,0 +1,42 @@
+<p>forms works!</p>
+<div class="container">
+    <div class="py-5 text-center">
+        <h2>Add Book</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-8 order-md-1">
+            <form class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="bookName">Name</label>
+                    <input type="text" class="form-control" id="bookName" placeholder="Book Name" required>
+                    <div class="invalid-feedback">
+                        Please enter book name.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="author">Author</label>
+                    <input type="text" class="form-control" id="author" placeholder="Book Author" required>
+                    <div class="invalid-feedback">
+                        Please enter author.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="price">Price</label>
+                    <input type="text" class="form-control" id="price" placeholder="Book Price" required>
+                    <div class="invalid-feedback">
+                        Please enter Price.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="image">Image</label>
+                    <input type="text" class="form-control" id="image" placeholder="Book Image" required>
+                    <div class="invalid-feedback">
+                        Please enter Book image url.
+                    </div>
+                </div>
+
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
